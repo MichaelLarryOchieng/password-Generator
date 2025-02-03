@@ -23,3 +23,5 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
         ]        
 
     return password
+    # new_password = generate_password(8)
+# print(new_password)
