@@ -11,6 +11,8 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
 
     # Combine all characters
     all_characters = letters + digits + symbols
+    print(all_characters)
+    print(letters)
 
     while True:
         password = ''
