@@ -13,7 +13,9 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
     all_characters = letters + digits + symbols
     print(all_characters)
     print(letters)
+    print(digits)
     print(symbols)
+    
 
     while True:
         password = ''
@@ -26,5 +28,6 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
         ]        
 
     return password
+    print(constraints)
     # new_password = generate_password(8)
 # print(new_password)
