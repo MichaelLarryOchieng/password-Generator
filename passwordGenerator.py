@@ -16,6 +16,7 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
     print(digits)
     print(symbols)
     print(lettees + digits)
+    print(digits + symbols)
     
 
     while True:
