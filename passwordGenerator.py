@@ -26,7 +26,7 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
             password += secrets.choice(all_characters)
         
         constraints = [
-            (nums, '[0123456789]')
+            (nums, r'\d')
         ]        
 
     return password
