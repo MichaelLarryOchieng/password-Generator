@@ -33,7 +33,7 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
 
         ]
             for constraint, pattern in constraints:
-                re.findall(pattern, password)
+                len(re.findall(pattern, password))
 
     return password
     print(constraints)
