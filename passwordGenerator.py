@@ -11,13 +11,6 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
 
     # Combine all characters
     all_characters = letters + digits + symbols
-    print(all_characters)
-    print(letters)
-    print(digits)
-    print(symbols)
-    print(lettees + digits)
-    print(digits + symbols)
-    
 
     while True:
         password = ''
@@ -26,16 +19,13 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
             password += secrets.choice(all_characters)
         
         constraints = [
-            (nums, r'\d')
-            (lowercase, r'[a-z]')
-            (uppercase, r'[A-Z]')
-            (special_chars, fr'[{symbols}]')            
-
-        ]
-            for constraint, pattern in constraints:
-                len(re.findall(pattern, password))
+            (nums, r'\d'),
+            (lowercase, r'[a-z]'),
+            (uppercase, r'[A-Z]'),
+            (special_chars, r'\W')
+        ]        
 
     return password
-    print(constraints)
-    # new_password = generate_password(8)
+    
+# new_password = generate_password(8)
 # print(new_password)
